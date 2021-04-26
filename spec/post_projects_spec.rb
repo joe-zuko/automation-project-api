@@ -3,7 +3,6 @@ describe "create a new project" do
     let(:user) { build(:user) }
     let(:token) { ApiUser.token(user.email, user.password) }
     let(:result) { ApiProject.create_project(build(:new_project, assignedTo: user.id).to_hash, token) }
-    it { puts(result) }
 
     it { expect(result.response.code).to eql "200" }
   end

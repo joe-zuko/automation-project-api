@@ -7,7 +7,6 @@ describe "put project" do
     let(:new_project) { build(:updated_project, assignedTo: user.id) }
     let(:result) { ApiProject.updated_projects(id_original_project, new_project.to_hash, token) }
 
-    it { puts result }
     it { expect(result.response.code).to eql "200" }
   end
 
