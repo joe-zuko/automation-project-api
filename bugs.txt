@@ -1,0 +1,9 @@
+- registro de usuário aceitando e-mail sem @;
+- registro de usuário aceitando campo nome empty;
+- registro de usuário aceitando campo nome null;
+- autenticar usuário, não trata o password empty como vazio (não exibe alerta);
+- aceita novos projetos com o mesmo título;
+- aceita novos projetos com os campos em branco;
+- aceita mudança de projetos com os campos em branco;
+- mesmo com ID do user errado ele aceita o novo projeto e ainda envia a mensagem que teve falha ao criar um novo projeto;
+- projeto aceita assignedTo nula ao subir um novo projeto usando uma váriavel de instancia;
